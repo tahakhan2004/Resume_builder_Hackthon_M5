@@ -1,0 +1,144 @@
+body {
+    font-family: Inter, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.form-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.btn {
+    background-color: #ff7613;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #e65c00;
+}
+
+.container {
+    max-width: 800px;
+    width: 90%;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.profile_name {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.profile_name_firstName {
+    color: #333;
+    font-weight: normal;
+}
+
+.profile_name_lastName {
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.profile_title {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+.description {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+.contact, .skills, .education, .experience {
+    margin-top: 2rem;
+}
+
+.title {
+    font-size: 1.5rem;
+    color: #007BFF;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.skills_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills_list li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 1rem;
+    }
+}
+
+
+/* Make sure to add styling to ensure contenteditable sections are visually distinguishable */
+[contenteditable="true"] {
+    border: 1px dashed #ccc; /* Visual cue for editability */
+    padding: 0.5rem;
+    min-height: 2rem; /* Ensures the section has some height */
+}
+
+[contenteditable="true"]:focus {
+    outline: none; /* Remove default outline */
+    border-color: var(--primary-color); /* Highlight border on focus */
+}
